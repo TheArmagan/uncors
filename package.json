@@ -1,0 +1,6 @@
+{
+  "dependencies": { "is-localhost-ip": "^2.0.0" },
+  "devDependencies": {
+    "@types/bun": "^1.0.8"
+  }
+}
