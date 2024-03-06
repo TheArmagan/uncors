@@ -40,7 +40,7 @@ const server = Bun.serve({
       resHeaders["access-control-allow-headers"] = "*";
       resHeaders["access-control-allow-methods"] = "*";
 
-      return new Response(res.body, {
+      return new Response(await res.arrayBuffer(), {
         headers: resHeaders,
         status: res.status,
       });
